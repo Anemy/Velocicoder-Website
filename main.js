@@ -22,6 +22,7 @@ function updateHtml() {
 		case landing:
 			html += '<div id="landing">';
 			html += 	'<h1>Velocicoder Studios</h1>';
+			html +=		'<img src="assets/Logo.svg">';
 			html += '</div>';
 			break;
 		case projects:
