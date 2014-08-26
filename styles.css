@@ -13,10 +13,21 @@ body {
 	text-align: center;
 }
 
-#landing img {
+#vsicon {
 	width:50%;
 	height: 50%;
 
+}
+
+#fbicon {
+	padding-right: 5px;
+	width:4%;
+	height:4%;
+}
+
+#twicon {
+	width:4%;
+	height:4%;
 }
 
 #landing h1 {
@@ -48,10 +59,44 @@ body {
 	cursor: pointer;
 }
 
-/*#aboutLink:hover {
-	opacity: 0.8;
+#fbicon:hover {
+	cursor: pointer;
 }
 
-#projectsLink:hover {
-	opacity: 0.8;
-}*/
+#twicon:hover {
+	cursor: pointer;
+}
+
+/* ABOUT PAGE */
+#about {
+	text-align: center;
+}
+#about_bar h1 {
+	display:inline-block;
+	margin-right: 20%;
+	font-family: 'MuseoSlab';
+	font-size: 60px;
+	font-size-adjust: 0;
+	font-weight: 500;
+	margin-bottom: 0px;
+	color: #2f4255;
+	letter-spacing:0.01em;
+}
+#about_bar h1 span {
+	letter-spacing: -0.05em;
+}
+#about_bar h3 {
+	display:inline-block;
+	font-family: 'MuseoSlab';
+	font-size: 36px;
+	font-weight: 200;
+	color: #2f4255;
+}
+
+#developersLink:hover {
+	cursor: pointer;
+}
+
+#contactusLink {
+	cursor: pointer;
+}
