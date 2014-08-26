@@ -70,14 +70,14 @@ $(document).ready(function() {
 	});
 
 	//ABOUT
-	$('body').on('click', '#projectsLink', function() {
+	$('body').on('click', '#developersLink', function() {
 		history.pushState();
-		page = 1;
+		aboutPage = 0;
 		update();
 	});
-	$('body').on('click', '#aboutLink', function() {
+	$('body').on('click', '#contactusLink', function() {
 		history.pushState();
-		page = 2;
+		aboutPage = 1;
 		update();
 	});
 
@@ -127,6 +127,14 @@ function updateHtml() {
 			html += 		'<h1><span>A</span>bout</h1>';
 			html += 		'<h3><span id="developersLink">Developers</span> | <span id="contactusLink">Contact us</span></h3>';
 			html += 	'</div>';
+			switch(aboutPage) {
+				case developers:
+					//TODO: Add dev images + text
+					break;
+				case contactus:
+					//TODO: Add contact us field
+					break;
+			}
 			html += '</div>';
 			break;
 		default:
