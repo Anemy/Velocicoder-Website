@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	update();
 
-
 // PROJECTS LINK HOVER ANIMATION
 	$('body').on('mouseenter', '#projectsLink', function() {
 		$('#projectsLink').animate({
@@ -101,6 +100,8 @@ var contactus = 1;
 function update() {
 	updateHtml();
 	$('body').html(html);
+	$('body').css('display', 'none');
+	$('body').fadeIn(500);
 }
 
 function updateHtml() {
