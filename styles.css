@@ -6,7 +6,7 @@
 body {
 	background-image:url('assets/halftone.png');
 	background-repeat: repeat;
-}	
+}
 
 #landing {
 	padding-top: 5%;
@@ -71,6 +71,7 @@ body {
 #about {
 	text-align: center;
 }
+
 #about_bar h1 {
 	display:inline-block;
 	margin-right: 20%;
@@ -82,9 +83,11 @@ body {
 	color: #2f4255;
 	letter-spacing:0.01em;
 }
+
 #about_bar h1 span {
 	letter-spacing: -0.05em;
 }
+
 #about_bar h3 {
 	display:inline-block;
 	font-family: 'MuseoSlab';
