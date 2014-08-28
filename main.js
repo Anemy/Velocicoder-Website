@@ -110,11 +110,11 @@ function updateHtml() {
 		case landing:
 			html += '<div id="landing">';
 			html +=		'<img id="vsicon" src="assets/Logo.svg">';
-			
+
 			//Text
 			html += 	'<h1><span>V</span>elocicoder Studios</h1>';
 			html += 	'<h3><span id="projectsLink">Projects</span> | <span id="aboutLink">About</span></h3>';
-			
+
 			//Media icons
 			html +=		'<img id="fbicon" src="assets/fb_logo.svg">';
 			html +=		'<img id="twicon" src="assets/tw_logo.svg">';
@@ -142,4 +142,8 @@ function updateHtml() {
 			html += "<h1>404 Error!</h1>"
 			break;
 	}
+	//ADDING FOOTER COPYRIGHT
+	html += '<div id="footer">';
+	html += 	'<p>&copy; 2014 Velocicoder Studios</p>';
+	html += '</div>';
 }
