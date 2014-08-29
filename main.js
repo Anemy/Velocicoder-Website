@@ -131,6 +131,18 @@ function updateHtml() {
 			switch(aboutPage) {
 				case developers:
 					//TODO: Add dev images + text
+					html += '<div class="bios">';
+					html += 	'<ul>';
+        	html += 		'<li id="roy" class="figures" >';
+          html += 			'<img src="assets/roy.jpg" width="300" height="300" alt="" class="figure"/>';
+          html += 			'<span class="biocaption">Roy - Founder - YoYo Master</span>';
+        	html += 		'</li>';
+        	html += 		'<li id="rhys" class="figures">';
+          html += 			'<img src="assets/rhys.jpg"  width="300" height="300" alt="" class="figure"/>';
+          html += 			'<span class="biocaption">Rhys - Founder & Dev</span>';
+        	html += 		'</li>';
+    			html += 	'</ul>';
+					html += '</div>';
 					break;
 				case contactus:
 					//TODO: Add contact us field

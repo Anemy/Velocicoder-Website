@@ -96,6 +96,27 @@ body {
 	color: #2f4255;
 }
 
+.bios ul {
+    /*margin: 0 auto;*/
+}
+
+li.figures {
+    display: inline-block;
+		margin: 2%;
+}
+
+.figures span {
+    font-size: 14px;
+    font-family: 'MuseoSlab';
+    letter-spacing: 0.1em;
+    clear:both;
+    display:block
+}
+
+.figures img{
+    vertical-align: top;
+}
+
 #developersLink:hover {
 	cursor: pointer;
 }
