@@ -1,161 +1,77 @@
+var page = 0;
+
+var landing = 0;
+var about = 1;
+var bio = 2;
+var amish = 3;
+var stick = 4;
+
 $(document).ready(function() {
 	update();
 
-// PROJECTS LINK HOVER ANIMATION
-	$('body').on('mouseenter', '#projectsLink', function() {
-		$('#projectsLink').animate({
-			opacity: 0.8
-		}, 200);
-	});
-	$('body').on('mouseleave', '#projectsLink', function() {
-		$('#projectsLink').animate({
-			opacity: 1
-		}, 200);
+	$('#landingLink').click(function() {
+		if(page != landing) {
+			page = landing;
+			update();
+		}
 	});
 
-// ABOUT LINK HOVER ANIMATION
-	$('body').on('mouseenter', '#aboutLink', function() {
-		$('#aboutLink').animate({
-			opacity: 0.8
-		}, 200);
-	});
-	$('body').on('mouseleave', '#aboutLink', function() {
-		$('#aboutLink').animate({
-			opacity: 1
-		}, 200);
+	$('#aboutLink').click(function() {
+		if(page != about) {
+			page = about;
+			update();
+		}
 	});
 
-// PAGE ABOUT DEVELOPERS HOVER ANIMATION
-	$('body').on('mouseenter', '#developersLink', function() {
-		$('#developersLink').animate({
-			opacity: 0.8
-		}, 200);
-	});
-	$('body').on('mouseleave', '#developersLink', function() {
-		$('#developersLink').animate({
-			opacity: 1
-		}, 200);
+	$('#bioLink').click(function() {
+		if(page != bio) {
+			page = bio;
+			update();
+		}
 	});
 
-// PAGE ABOUT CONTACTUS HOVER ANIMATION
-	$('body').on('mouseenter', '#contactusLink', function() {
-		$('#contactusLink').animate({
-			opacity: 0.8
-		}, 200);
-	});
-	$('body').on('mouseleave', '#contactusLink', function() {
-		$('#contactusLink').animate({
-			opacity: 1
-		}, 200);
+	$('#amishLink').click(function() {
+		if(page != amish) {
+			page = amish;
+			update();
+		}
 	});
 
-// CLICK ACTIONS
-	//LANDING
-	$('body').on('click', '#projectsLink', function() {
-		history.pushState();
-		page = 1;
-		update();
+	$('#stickLink').click(function() {
+		if(page != stick) {
+			page = stick;
+			update();
+		}
 	});
-	$('body').on('click', '#aboutLink', function() {
-		history.pushState();
-		page = 2;
-		update();
-	});
-	$('body').on('click', '#fbicon', function() {
-		window.open("https://www.facebook.com/velocicoder");
-	});
-	$('body').on('click', '#twicon', function() {
-		window.open("https://www.twitter.com/");
-	});
-
-	//ABOUT
-	$('body').on('click', '#developersLink', function() {
-		history.pushState();
-		aboutPage = 0;
-		update();
-	});
-	$('body').on('click', '#contactusLink', function() {
-		history.pushState();
-		aboutPage = 1;
-		update();
-	});
-
-
 });
 
-var page = 0;
-//tab IDs
-var html;
-var landing = 0;
-var projects = 1;
-var about = 2;
-
-
-var aboutPage = 0;
-//about tab IDs
-var developers = 0;
-var contactus = 1;
-
-
 function update() {
-	updateHtml();
-	$('body').html(html);
-	$('body').css('display', 'none');
-	$('body').fadeIn(500);
+	var newHtml = updateHtml();
+	$('.content').html(newHtml);
 }
 
+
+
 function updateHtml() {
-	html = '';
+	var html = '';
 	switch(page) {
 		case landing:
 			html += '<div id="landing">';
 			html +=		'<img id="vsicon" src="assets/Logo.svg">';
 
 			//Text
-			html += 	'<h1><span>V</span>elocicoder Studios</h1>';
-			html += 	'<h3><span id="projectsLink">Projects</span> | <span id="aboutLink">About</span></h3>';
-
-			//Media icons
-			html +=		'<img id="fbicon" src="assets/fb_logo.svg">';
-			html +=		'<img id="twicon" src="assets/tw_logo.svg">';
+			html += 	'<h1><span>VELOCICODER</span> STUDIOS</h1>';
 			html += '</div>';
 			break;
-		case projects:
-			break;
 		case about:
-			html += '<div id="about">';
-			html += 	'<div id="about_bar">';
-			html += 		'<h1><span>A</span>bout</h1>';
-			html += 		'<h3><span id="developersLink">Developers</span> | <span id="contactusLink">Contact us</span></h3>';
-			html += 	'</div>';
-			switch(aboutPage) {
-				case developers:
-					//TODO: Add dev images + text
-					html += '<div class="bios">';
-					html += 	'<ul>';
-        	html += 		'<li id="roy" class="figures" >';
-          html += 			'<img src="assets/roy.jpg" width="300" height="300" alt="" class="figure"/>';
-          html += 			'<span class="biocaption">Roy - Founder - YoYo Master</span>';
-        	html += 		'</li>';
-        	html += 		'<li id="rhys" class="figures">';
-          html += 			'<img src="assets/rhys.jpg"  width="300" height="300" alt="" class="figure"/>';
-          html += 			'<span class="biocaption">Rhys - Founder & Dev</span>';
-        	html += 		'</li>';
-    			html += 	'</ul>';
-					html += '</div>';
-					break;
-				case contactus:
-					//TODO: Add contact us field
-					break;
-			}
+			break;
+		case bio:
+			html += '<div id="bio">';
+			html += 	'<h1>THE VELOCICODER TEAM</h1>';
 			html += '</div>';
 			break;
 		default:
-			html += "<h1>404 Error!</h1>"
 			break;
 	}
-	//ADDING FOOTER COPYRIGHT
-	html += '<div id="footer">';
-	html += 	'<p>&copy; 2014 Velocicoder Studios</p>';
-	html += '</div>';
+	return html;
 }

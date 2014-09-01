@@ -1,136 +1,92 @@
 @font-face {
-	font-family: MuseoSlab;
-	src: url('assets/KomikaTitle-Kaps.ttf');
+	font-family: Campton;
+	src: url('assets/Rene.Bieder_Campton.Light.otf');
 }
 
 body {
-	background-image:url('assets/halftone.png');
-	background-repeat: repeat;
+	margin: 0px;
+	font-family: Campton;
+	background-color: #36414d;
 }
 
-#landing {
-	padding-top: 5%;
+#sidebar {
+	float: left;
+	height: 100%;
+	width: 20%;
+	min-width: 200px;
+	background-color: #414e5d;
+}
+
+#sidebar h1 {
+	color: #2ecc71;
+	font-weight: 200;
+	font-size: 18pt;
 	text-align: center;
+	cursor: pointer;
 }
 
-#vsicon {
-	width:50%;
-	height: 50%;
-
+#sidebar h1:hover {
+	color: #3bfa8c;
 }
 
-#fbicon {
-	padding-right: 5px;
-	width:4%;
-	height:4%;
+#sidebar ul {
+	list-style-type: none;
+	padding-left: 15px;
+	line-height: 25px;
 }
 
-#twicon {
-	width:4%;
-	height:4%;
+#sidebar h2 {
+	/*margin-top: 0px;*/
+	line-height: 0px;
+	color: #95a5a6;
+	font-weight: 200;
+	font-size: 16pt;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+#sidebar li {
+	color: #95a5a6;
+	font-weight: 200;
+	font-size: 14pt;
+	cursor: pointer;
+}
+
+#sidebar li:hover {
+	color: #ecf0f1;
+}
+
+.container {
+	width: 180px;
+	margin: auto;
+}
+
+#main {
+	float: left;
+	height: 100%;
+	width: 80%;
+	min-width: 400px;
+}
+
+#landing img {
+	margin: auto;
+	padding:100px;
+	padding-bottom: 20px;
+	width: 60%;
+	height: 60%;
 }
 
 #landing h1 {
-	margin-top: 0px;
-	font-family: 'MuseoSlab';
-	font-size: 60px;
-	font-size-adjust: 0;
-	font-weight: 500;
-	color: #27ae60;
-	margin-bottom: 0px;
-	/*letter-spacing:-0.01em;*/
-}
-#landing h1 span {
-	letter-spacing: -0.05em;
-}
-#landing h3 {
-	margin-top: 0px;
-	font-family: 'MuseoSlab';
-	font-size: 36px;
-	font-weight: 200;
-	color: #2f4255;
-}
-
-#aboutLink:hover {
-	cursor: pointer;
-}
-
-#projectsLink {
-	cursor: pointer;
-}
-
-#fbicon:hover {
-	cursor: pointer;
-}
-
-#twicon:hover {
-	cursor: pointer;
-}
-
-/* ABOUT PAGE */
-#about {
 	text-align: center;
-}
-
-#about_bar h1 {
-	display:inline-block;
-	margin-right: 20%;
-	font-family: 'MuseoSlab';
-	font-size: 60px;
-	font-size-adjust: 0;
 	font-weight: 500;
-	margin-bottom: 0px;
-	color: #2f4255;
-	letter-spacing:0.01em;
+	color: #ecf0f1;
 }
 
-#about_bar h1 span {
-	letter-spacing: -0.05em;
+#landing h1 span {
+	color: #2ecc71;
 }
 
-#about_bar h3 {
-	display:inline-block;
-	font-family: 'MuseoSlab';
-	font-size: 36px;
-	font-weight: 200;
-	color: #2f4255;
-}
-
-.bios ul {
-    /*margin: 0 auto;*/
-}
-
-li.figures {
-    display: inline-block;
-		margin: 2%;
-}
-
-.figures span {
-    font-size: 14px;
-    font-family: 'MuseoSlab';
-    letter-spacing: 0.1em;
-    clear:both;
-    display:block
-}
-
-.figures img{
-    vertical-align: top;
-}
-
-#developersLink:hover {
-	cursor: pointer;
-}
-
-#contactusLink {
-	cursor: pointer;
-}
-
-#footer {
-	position:absolute;
-	bottom:0;
-}
-
-#footer p {
-	color: #000000;
-	font-size: 12px;
+.content {
+	width: 600px;
+	margin: auto;
 }
