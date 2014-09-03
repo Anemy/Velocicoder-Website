@@ -56,6 +56,20 @@ body {
 	color: #ecf0f1;
 }
 
+#icons {
+	position: absolute;
+	bottom: 2;
+}
+
+#icons img {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+#icons img:hover {
+	opacity: 1;
+}
+
 .container {
 	width: 180px;
 	margin: auto;
