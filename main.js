@@ -43,6 +43,14 @@ $(document).ready(function() {
 			update();
 		}
 	});
+
+	$('#fbLink').click(function() {
+		window.open("https://www.facebook.com/velocicoder");
+	});
+
+	$('#twLink').click(function() {
+		window.open("https://www.twitter.com");
+	});
 });
 
 function update() {
@@ -57,7 +65,7 @@ function updateHtml() {
 	switch(page) {
 		case landing:
 			html += '<div id="landing">';
-			html +=		'<img id="vsicon" src="assets/Logo.svg">';
+			html +=		'<img src="assets/Logo.svg">';
 
 			//Text
 			html += 	'<h1><span>VELOCICODER</span> STUDIOS</h1>';
@@ -66,8 +74,22 @@ function updateHtml() {
 		case about:
 			break;
 		case bio:
-			html += '<div id="bio">';
+			html += '<div class="bios">';
 			html += 	'<h1>THE VELOCICODER TEAM</h1>';
+			html += 	'<ul>';
+									//ROY ICON + TEXT
+    	html += 		'<li class="figures">';
+      html += 			'<img src="assets/roy.jpg" alt="" class="figure"/>';
+      html += 			'<span class="bioName">Roy Fu</span>';
+			html += 			'<span class="bioJob">Such Designer</span>';
+    	html += 		'</li>';
+									//RHYS ICON + TEXT
+    	html += 		'<li class="figures">';
+      html += 			'<img src="assets/rhys.jpg" alt="" class="figure"/>';
+      html += 			'<span class="bioName">Rhys Howell</span>';
+			html += 			'<span class="bioJob">Programmer</span>';
+    	html += 		'</li>';
+			html += 	'</ul>';
 			html += '</div>';
 			break;
 		default:
