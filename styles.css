@@ -2,6 +2,14 @@
 	font-family: Campton;
 	src: url('assets/Rene.Bieder_Campton.Light.otf');
 }
+@font-face {
+	font-family: Campton-Heavy;
+	src: url('assets/Rene.Bieder_Campton.Medium.otf');
+}
+@font-face {
+	font-family: Campton-Book;
+	src: url('assets/Rene.Bieder_Campton.Book.otf');
+}
 
 body {
 	margin: 0px;
@@ -102,8 +110,9 @@ body {
 }
 
 #landing h1 {
+	font-family: Campton-Heavy;
 	text-align: center;
-	font-weight: 800;
+	font-weight: 500;
 	color: #ecf0f1;
 }
 
@@ -122,6 +131,7 @@ body {
 }
 
 .bios h1 {
+	font-size: 36pt;
 	font-weight: 500;
 	color: #ecf0f1;
 }
@@ -139,14 +149,16 @@ li.figures {
 .figures img{
 	vertical-align: top;
 	width: 200px;
-	padding:8px;
+	padding:10px;
+	margin-right: 10px;
 	background-color:#414e5d;
 }
 
 span.bioName {
-	font-family: Campton;
+	padding-top: 10px;
+	font-family: Campton-Book;
 	text-align: left;
-	font-size: 18px;
+	font-size: 24px;
 	color: #ecf0f1;
 	clear: both;
 	display: block;
@@ -155,7 +167,7 @@ span.bioName {
 span.bioJob {
 	font-family: Campton;
 	text-align: left;
-	font-size: 12px;
+	font-size: 17px;
 	color: #ecf0f1;
 	clear: both;
 	display: block;
