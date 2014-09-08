@@ -179,7 +179,7 @@ span.bioJob {
 
 /*START AMISH PROJECT PAGE*/
 #amishTitle {
-	padding-left: 31%;
+	padding-left: 35%;
 	width: 30%;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
@@ -192,29 +192,31 @@ span.bioJob {
 	width: 40%;
 	margin-left: 4%;
 	margin-right: 2%;
-	margin-bottom: 2%;
+	margin-bottom: 4%;
 
 	padding:10px;
 	background-color:#414e5d;
+}
+
+#amishBar {
+	margin: 0px;
 }
 
 #amishSidePanel {
 	text-align: center;
 	display: inline-block;
 	padding: 4px;
-	padding-top: 0px;
 	background-color: #414e5d;
 	width: 36%;
 	color: #95a5a6;
 	font-weight: 200;
 	font-size: 16pt;
+	margin-top: 0px;
 }
 
 #amishRightScreen {
-	float: left;
 	width: 34.5%;
-	height: 15%;
-
+	margin-top: 0px;
 	padding:10px;
 	background-color:#414e5d;
 }
@@ -222,7 +224,7 @@ span.bioJob {
 #amishUnderPanel {
 	padding: 3px;
 	margin-left: 4%;
-	margin-top: 14%;
+	margin-top: 4%;
 	background-color: #414e5d;
 	width: 80%;
 	color: #95a5a6;

@@ -96,10 +96,12 @@ function updateHtml() {
 			html += '<div class="amish">';
 			html +=		'<img id="amishTitle" src="assets/amishTitle.png">';
 			html += 	'<hr></hr>';
-			html +=		'<img id="amishScreen" src="assets/amishScreen.png">';
-			html += 	'<p id="amishSidePanel"><span><a href="http://amishhero.com">PLAY NOW!</a></span><br><br>Collect your harvest while maintaining your Amish ways!</p>';
-			html +=		'<img id="amishRightScreen" src="assets/amishRightScreen.png">';
-			html += 	'<p id="amishUnderPanel">HTML5 | Javascript | Canvas<br>Created in 12 hours.<br>Programming: Rhys Howell | Graphics: Roy Fu.<br>2nd place at a hackathon.</p>';
+			html += 	'<div class="amishBar">';
+			html +=			'<img id="amishScreen" src="assets/amishScreen.png">';
+			html += 		'<p id="amishSidePanel"><span><a href="http://amishhero.com">PLAY NOW!</a></span><br><br>Collect your harvest while maintaining your Amish ways!</p>';
+			html +=			'<img id="amishRightScreen" src="assets/amishRightScreen.png">';
+			html += 	'</div>';
+			html += 	'<p id="amishUnderPanel">HTML5 | Javascript | Canvas<br>Created in 12 hours.<br>Programming: Rhys Howell <br>Graphics: Roy Fu.<br>2nd place at a hackathon.</p>';
 			html += '</div>';
 			break;
 		default:
