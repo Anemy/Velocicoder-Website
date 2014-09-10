@@ -104,6 +104,18 @@ function updateHtml() {
 			html += 	'<p id="amishUnderPanel">HTML5 | Javascript | Canvas<br>Created in 12 hours.<br>Programming: Rhys Howell <br>Graphics: Roy Fu.<br>2nd place at a hackathon.</p>';
 			html += '</div>';
 			break;
+		case stick:
+			html += '<div class="stick">';
+			html +=		'<img id="stickTitle" src="assets/amishTitle.png">';
+			html += 	'<hr></hr>';
+			html += 	'<div class="stickBar">';
+			html +=			'<img id="stickScreen" src="assets/amishScreen.png">';
+			html += 		'<p id="stickSidePanel"><span><a href="http://stcik-battle.com">PLAY NOW!</a></span><br><br>Battle your friends and zombies in this arade style stick figure shooting game! Complete with online modes and AI!</p>';
+			html +=			'<img id="stickRightScreen" src="assets/amishRightScreen.png">';
+			html += 	'</div>';
+			html += 	'<p id="stickUnderPanel">HTML5 | Javascript | Canvas | Node.js | Socket io | Express<br>Programming & Design: Paul Henninger <br>Programming: Rhys Howell</p>';
+			html += '</div>';
+			break;
 		default:
 			break;
 	}

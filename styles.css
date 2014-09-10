@@ -246,3 +246,69 @@ a:active  {color:#000000; background-color:transparent}
 	margin-bottom: 20px;
 	width: 40%
 }
+/*END AMISH PROJECT PAGE*/
+
+/*START STICK PROJECT PAGE*/
+#stickTitle {
+	padding-left: 35%;
+	width: 30%;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#stickScreen {
+	display: inline-block;
+
+	float: left;
+	width: 40%;
+	margin-left: 4%;
+	margin-right: 2%;
+	margin-bottom: 4%;
+
+	padding:10px;
+	background-color:#414e5d;
+}
+
+#stickBar {
+	margin: 0px;
+}
+
+#stickSidePanel {
+	text-align: center;
+	display: inline-block;
+	padding: 4px;
+	background-color: #414e5d;
+	width: 36%;
+	color: #95a5a6;
+	font-weight: 200;
+	font-size: 16pt;
+	margin-top: 0px;
+}
+
+#stickRightScreen {
+	width: 34.5%;
+	margin-top: 0px;
+	padding:10px;
+	background-color:#414e5d;
+}
+
+#stickUnderPanel {
+	padding: 3px;
+	margin-left: 4%;
+	margin-top: 4%;
+	background-color: #414e5d;
+	width: 80%;
+	color: #95a5a6;
+	font-weight: 200;
+	font-size: 16pt;
+}
+
+.stick hr {
+	color: #414e5d;
+	background-color: #414e5d;
+	border-style: solid;
+	border-color: #414e5d;
+	margin-bottom: 20px;
+	width: 40%
+}
+/*END STICK PROJECT PAGE*/
