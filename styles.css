@@ -303,6 +303,11 @@ a:active  {color:#000000; background-color:transparent}
 	font-size: 16pt;
 }
 
+a a:link  {color:#ecf0f1; background-color:transparent}
+a:visited {color:#ecf0f1; background-color:transparent}
+a:hover   {color:#000000; background-color:transparent}
+a:active  {color:#000000; background-color:transparent}
+
 .stick hr {
 	color: #414e5d;
 	background-color: #414e5d;

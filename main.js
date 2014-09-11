@@ -106,12 +106,12 @@ function updateHtml() {
 			break;
 		case stick:
 			html += '<div class="stick">';
-			html +=		'<img id="stickTitle" src="assets/amishTitle.png">';
+			html +=		'<img id="stickTitle" src="assets/stickTitle.png">';
 			html += 	'<hr></hr>';
 			html += 	'<div class="stickBar">';
-			html +=			'<img id="stickScreen" src="assets/amishScreen.png">';
-			html += 		'<p id="stickSidePanel"><span><a href="http://stcik-battle.com">PLAY NOW!</a></span><br><br>Battle your friends and zombies in this arade style stick figure shooting game! Complete with online modes and AI!</p>';
-			html +=			'<img id="stickRightScreen" src="assets/amishRightScreen.png">';
+			html +=			'<img id="stickScreen" src="assets/stickScreen.png">';
+			html += 		'<p id="stickSidePanel"><span><a href="http://stick-battle.com">PLAY NOW!</a></span><br><br>Battle your friends and zombies in this arade style stick figure shooting game! Complete with online modes and AI!</p>';
+			html +=			'<img id="stickRightScreen" src="assets/stickRightScreen.png">';
 			html += 	'</div>';
 			html += 	'<p id="stickUnderPanel">HTML5 | Javascript | Canvas | Node.js | Socket io | Express<br>Programming & Design: Paul Henninger <br>Programming: Rhys Howell</p>';
 			html += '</div>';
